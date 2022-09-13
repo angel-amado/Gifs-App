@@ -1,0 +1,27 @@
+<!-- <div class="col">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis ipsum
+  itaque? Corrupti saepe ex dicta placeat, quisquam ratione! Temporibus repellat
+  suscipit recusandae obcaecati maiores quasi? Amet beatae hic nobis?
+</div> -->
+
+<!-- 
+<ul>
+  <li *ngFor="let resultado of resultados">{{ resultado.title }}</li>
+</ul> -->
+
+<div class="row">
+  <div
+    *ngFor="let resultado of resultados"
+    class="col-md-4 col-sm-6 animate__animated animate__fadeIn"
+  >
+    <div class="card">
+      <img
+        [src]="resultado.images.downsized_medium.url"
+        [alt]="resultado.title"
+        class="card-img-top"
+      />
+      <div class="card-body"></div>
+      <p class="card-text">{{ resultado.title }}</p>
+    </div>
+  </div>
+</div>
